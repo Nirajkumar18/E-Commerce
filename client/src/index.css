@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
+.navbar {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 8px 6px -6px gray;
+  border-bottom: solid gray !important;
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+/* =============================
+==========footer============= */
+
+.footer {
+  color: white;
+  padding: 25px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: black;
+  color: white;
+}
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================== */
+/* =====Register Page========= */
+
+
+* {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+
+
+}
+
+.loginContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  width:480px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ 
+}
+
+
+.loginContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 2rem;
+  min-height: 40vh;
+  background-color: #000000;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.40)0px 5px 15px;
+
+  
+}
+
+
+.loginContent .welcome h1{
+   font-size: 2.5rem;
+   font-weight: 600;
+   color: red;
+   margin-bottom: 0.3rem;
+}
+.loginContent .welcome h1 span{
+  color: white;
+}
+.loginContent .welcome p{
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.loginContent form{
+  width: 65%;
+  padding: 10px 5px;
+}
+.loginContent form .formContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.loginContent form .formContent label{
+  color: red;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 0.1rem;
+}
+.loginContent form .formContent input{
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  padding: 7px 9px;
+  border-radius: 0.3rem;
+}
+.loginContent form .login-btn{
+  display: flex;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+.loginContent form .login-btn button{
+  margin-bottom: 0.8rem;
+  background-color:red;
+  color:white;
+  padding: 0.7rem 1.4rem;
+  clip-path: polygon(100% 0, 100% 71%, 90% 100%, 0 100%, 0 0);
+  border-radius:0.2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-align: center;
+  cursor: pointer;
+  margin: auto;
+}
+.loginContent form .login-btn:hover{
+  transform: scale(1.02);
+}
+.loginContent form .sign-in{
+  width: 53%;
+  margin: auto;
+  text-align: center;
+}
+.loginContent form .sign-in a{
+  color: red;
+
+}
+
+
