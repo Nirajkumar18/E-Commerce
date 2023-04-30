@@ -3,9 +3,9 @@ import Layout from "./../../components/Layout/Layout";
 import AdminMenu from "./../../components/Layout/AdminMenu";
 import toast from "react-hot-toast";
 import axios from "axios";
-// import { Select } from "antd";
+import { Select } from "antd";
 import { useNavigate } from "react-router-dom";
-// const { Option } = Select;
+const { Option } = Select;
 
 const CreateProduct = () => {
   const navigate = useNavigate();
@@ -72,7 +72,7 @@ const CreateProduct = () => {
           <div className="col-md-9">
             <h1>Create Product</h1>
             <div className="m-1 w-75">
-              {/* <Select
+              <Select
                 bordered={false}
                 placeholder="Select a category"
                 size="large"
@@ -87,7 +87,7 @@ const CreateProduct = () => {
                     {c.name}
                   </Option>
                 ))}
-              </Select> */}
+              </Select>
               <div className="mb-3">
                 <label className="btn btn-outline-secondary col-md-12">
                   {photo ? photo.name : "Upload Photo"}
@@ -150,7 +150,7 @@ const CreateProduct = () => {
                 />
               </div>
               <div className="mb-3">
-                {/* <Select
+                <Select
                   bordered={false}
                   placeholder="Select Shipping "
                   size="large"
@@ -162,7 +162,7 @@ const CreateProduct = () => {
                 >
                   <Option value="0">No</Option>
                   <Option value="1">Yes</Option>
-                </Select> */}
+                </Select>
               </div>
               <div className="mb-3">
                 <button className="btn btn-primary" onClick={handleCreate}>

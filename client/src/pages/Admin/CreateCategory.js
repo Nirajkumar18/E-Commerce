@@ -3,8 +3,8 @@ import Layout from "./../../components/Layout/Layout";
 import AdminMenu from "./../../components/Layout/AdminMenu";
 import toast from "react-hot-toast";
 import axios from "axios";
-// import CategoryForm from "../../components/Form/CategoryForm";
-// import { Modal } from "antd";
+import CategoryForm from "./../../components/Form/CategoryForm";
+import { Modal } from "antd";
 const CreateCategory = () => {
   const [categories, setCategories] = useState([]);
   const [name, setName] = useState("");
@@ -39,7 +39,7 @@ const CreateCategory = () => {
       }
     } catch (error) {
       console.log(error);
-      toast.error("Something wwent wrong in getting catgeory");
+      toast.error("Something went wrong in getting catgeory");
     }
   };
 
@@ -95,11 +95,11 @@ const CreateCategory = () => {
           <div className="col-md-9">
             <h1>Manage Category</h1>
             <div className="p-3 w-50">
-              {/* <CategoryForm
+              <CategoryForm
                 handleSubmit={handleSubmit}
                 value={name}
                 setValue={setName}
-              /> */}
+              />
             </div>
             <div className="w-75">
               <table className="table">
@@ -140,7 +140,7 @@ const CreateCategory = () => {
                 </tbody>
               </table>
             </div>
-            {/* <Modal
+            <Modal
               onCancel={() => setVisible(false)}
               footer={null}
               visible={visible}
@@ -150,7 +150,7 @@ const CreateCategory = () => {
                 setValue={setUpdatedName}
                 handleSubmit={handleUpdate}
               />
-            </Modal> */}
+            </Modal>
           </div>
         </div>
       </div>
